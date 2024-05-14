@@ -14,3 +14,4 @@ def get_status_all():
 @router.get("/status/{hoscode}", dependencies=[Depends(access_user_token)])
 def get_status_by_hoscode(hoscode: str):
     return query_controller.get_status_by_hoscode(hoscode)
+
