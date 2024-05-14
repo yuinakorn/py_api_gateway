@@ -10,7 +10,8 @@ config_env = dotenv_values(".env")
 app = FastAPI(docs_url="/api-docs", redoc_url=None)
 
 origins = [
-    config_env["CORS_ORIGIN1"]
+    config_env["CORS_ORIGIN1"],
+    config_env["CORS_ORIGIN2"],
 ]
 
 print(origins)
